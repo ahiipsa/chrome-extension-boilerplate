@@ -23,7 +23,10 @@
     "permissions": [
       "https://*/*"
     ],
-    "content_security_policy": "default-src 'self';",
+    "web_accessible_resources": [
+      "/popup.html"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'",
     "content_scripts": [
       {
         "matches": [
@@ -35,4 +38,4 @@
       }
     ]
   }
-  
+

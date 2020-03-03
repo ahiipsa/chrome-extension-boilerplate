@@ -1,11 +1,12 @@
 {
     "compilerOptions": {
+        "lib": ["es2015", "es2016", "dom", "es2018.promise"],
         "sourceMap": true,
         "target": "es6",
         "module": "commonjs",
         "jsx": "react"
     },
     "exclude": [
-        "node_modules",
+        "node_modules"
     ]
 }
